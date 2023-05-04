@@ -9,6 +9,7 @@ import java.sql.SQLException;
 
 /**
  * All mySQL Queries below are planned to be extracted to own classes in the future
+ * All TextFields are planned to be replaced by selectable items to prevent errors with the database
  */
 
 public class CarManagement extends JFrame implements ActionListener {
