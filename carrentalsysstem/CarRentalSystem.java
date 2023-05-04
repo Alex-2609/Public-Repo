@@ -71,7 +71,6 @@ public class CarRentalSystem extends JFrame implements ActionListener {
 
             databaseStatus.setText("Connection to database failed!");
             databaseStatus.setForeground(Color.red);
-
         }
     }
 
@@ -93,4 +92,5 @@ public class CarRentalSystem extends JFrame implements ActionListener {
         }
 
     }
+
 }

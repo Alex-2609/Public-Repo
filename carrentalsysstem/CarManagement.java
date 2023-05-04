@@ -22,28 +22,21 @@ public class CarManagement extends JFrame implements ActionListener {
 
     private final JButton insertButton;
 
-
     private final JTextField licensePlateTextField;
-    private final JLabel licensePlateLabel;
+
 
     private final JTextField manufacturerTextField;
-    private final JLabel manufacturerLabel;
 
 
     private final JTextField carModelTextField;
-    private final JLabel carModelLabel;
 
     private final JTextField fuelTypeTextField;
-    private final JLabel fuelTypeLabel;
 
     private final JTextField gearBoxTypeTextField;
-    private final JLabel gearBoxTypeLabel;
 
     private final JTextField carClassTextField;
-    private final JLabel carClassLabel;
 
     private final JTextField carStatusTextField;
-    private final JLabel carStatusLabel;
 
     private final Connection connection;
 
@@ -82,6 +75,8 @@ public class CarManagement extends JFrame implements ActionListener {
         insertButton.setVisible(false);
         insertButton.addActionListener(this);
 
+        checkConnection();
+
         JButton cancelButton = new JButton("Cancel");
         cancelButton.setBackground(Color.RED.darker());
         cancelButton.setVisible(false);
@@ -90,13 +85,13 @@ public class CarManagement extends JFrame implements ActionListener {
         GridBagConstraints gridBagConstraints = new GridBagConstraints();
         JPanel panel = new JPanel(new GridBagLayout());
 
-        licensePlateLabel = new JLabel("License Plate: ");
-        manufacturerLabel = new JLabel("Manufacturer: ");
-        carModelLabel = new JLabel("Car Model: ");
-        fuelTypeLabel = new JLabel("Fuel Type: ");
-        gearBoxTypeLabel = new JLabel("Gearbox: ");
-        carClassLabel = new JLabel("Class: ");
-        carStatusLabel = new JLabel("Status: ");
+        JLabel licensePlateLabel = new JLabel("License Plate: ");
+        JLabel manufacturerLabel = new JLabel("Manufacturer: ");
+        JLabel carModelLabel = new JLabel("Car Model: ");
+        JLabel fuelTypeLabel = new JLabel("Fuel Type: ");
+        JLabel gearBoxTypeLabel = new JLabel("Gearbox: ");
+        JLabel carClassLabel = new JLabel("Class: ");
+        JLabel carStatusLabel = new JLabel("Status: ");
 
         licensePlateTextField = new JTextField(10);
 
@@ -293,6 +288,21 @@ public class CarManagement extends JFrame implements ActionListener {
         gearBoxTypeTextField.setText(null);
         carClassTextField.setText(null);
         carStatusTextField.setText(null);
+
+    }
+
+    public void checkConnection() {
+
+        if(connection == null) {
+            disableAllButtons();
+        }
+    }
+
+    public void disableAllButtons() {
+
+        searchButton.setEnabled(false);
+        addButton.setEnabled(false);
+        editButton.setEnabled(false);
 
     }
 }
