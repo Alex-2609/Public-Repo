@@ -1,8 +1,8 @@
 /**
  * For Java GUI Documentation look at:
- * - <a href="https://docs.oracle.com/javase/8/docs/api/index.html?javax/swing/package-summary.html">...</a> -> Official Website
- * - <a href="https://www.javatpoint.com/java-swing">...</a> -> personal recommendation
- * - <a href="https://dev.mysql.com/doc/connector-j/8.0/en/">...</a> -> SQL Documentation
+ * - https://docs.oracle.com/javase/8/docs/api/index.html?javax/swing/package-summary.html" -> Official Website
+ * - "https://www.javatpoint.com/java-swing" -> personal recommendation
+ * - "https://dev.mysql.com/doc/connector-j/8.0/en/" -> SQL Documentation
  *
  */
 
