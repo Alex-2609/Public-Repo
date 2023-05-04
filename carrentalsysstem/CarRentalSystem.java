@@ -21,7 +21,6 @@ public class CarRentalSystem extends JFrame implements ActionListener {
         setSize(720,720);
         setResizable(false);
         setTitle("CRMS V1.0");
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         databaseStatus = new JLabel();
         databaseStatus.setHorizontalAlignment(JLabel.CENTER);
