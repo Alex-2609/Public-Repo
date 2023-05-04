@@ -24,26 +24,26 @@ public class CarManagement extends JFrame implements ActionListener {
 
 
     private final JTextField licensePlateTextField;
-    JLabel licensePlateLabel;
+    private final JLabel licensePlateLabel;
 
-    JTextField manufacturerTextField;
-    JLabel manufacturerLabel;
+    private final JTextField manufacturerTextField;
+    private final JLabel manufacturerLabel;
 
 
-    JTextField carModelTextField;
-    JLabel carModelLabel;
+    private final JTextField carModelTextField;
+    private final JLabel carModelLabel;
 
-    JTextField fuelTypeTextField;
-    JLabel fuelTypeLabel;
+    private final JTextField fuelTypeTextField;
+    private final JLabel fuelTypeLabel;
 
-    JTextField gearBoxTypeTextField;
-    JLabel gearBoxTypeLabel;
+    private final JTextField gearBoxTypeTextField;
+    private final JLabel gearBoxTypeLabel;
 
-    JTextField carClassTextField;
-    JLabel carClassLabel;
+    private final JTextField carClassTextField;
+    private final JLabel carClassLabel;
 
-    JTextField carStatusTextField;
-    JLabel carStatusLabel;
+    private final JTextField carStatusTextField;
+    private final JLabel carStatusLabel;
 
     private final Connection connection;
 
