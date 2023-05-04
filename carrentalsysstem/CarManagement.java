@@ -24,26 +24,19 @@ public class CarManagement extends JFrame implements ActionListener {
 
 
     private final JTextField licensePlateTextField;
-    JLabel licensePlateLabel;
 
-    JTextField manufacturerTextField;
-    JLabel manufacturerLabel;
+    private final JTextField manufacturerTextField;
 
 
-    JTextField carModelTextField;
-    JLabel carModelLabel;
+    private final JTextField carModelTextField;
 
-    JTextField fuelTypeTextField;
-    JLabel fuelTypeLabel;
+    private final JTextField fuelTypeTextField;
 
-    JTextField gearBoxTypeTextField;
-    JLabel gearBoxTypeLabel;
+    private final JTextField gearBoxTypeTextField;
 
-    JTextField carClassTextField;
-    JLabel carClassLabel;
+    private final JTextField carClassTextField;
 
-    JTextField carStatusTextField;
-    JLabel carStatusLabel;
+    private final JTextField carStatusTextField;
 
     private final Connection connection;
 
@@ -90,13 +83,13 @@ public class CarManagement extends JFrame implements ActionListener {
         GridBagConstraints gridBagConstraints = new GridBagConstraints();
         JPanel panel = new JPanel(new GridBagLayout());
 
-        licensePlateLabel = new JLabel("License Plate: ");
-        manufacturerLabel = new JLabel("Manufacturer: ");
-        carModelLabel = new JLabel("Car Model: ");
-        fuelTypeLabel = new JLabel("Fuel Type: ");
-        gearBoxTypeLabel = new JLabel("Gearbox: ");
-        carClassLabel = new JLabel("Class: ");
-        carStatusLabel = new JLabel("Status: ");
+        JLabel licensePlateLabel = new JLabel("License Plate: ");
+        JLabel manufacturerLabel = new JLabel("Manufacturer: ");
+        JLabel carModelLabel = new JLabel("Car Model: ");
+        JLabel fuelTypeLabel = new JLabel("Fuel Type: ");
+        JLabel gearBoxTypeLabel = new JLabel("Gearbox: ");
+        JLabel carClassLabel = new JLabel("Class: ");
+        JLabel carStatusLabel = new JLabel("Status: ");
 
         licensePlateTextField = new JTextField(10);
 
