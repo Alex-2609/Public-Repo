@@ -57,13 +57,13 @@ public class CarRentalSystem extends JFrame implements ActionListener {
 
     public void connectToDatabase() {
 
-        String serverName = "localhost";
-        String myDataBase = "carrentalsystem";
+        String serverName = "";
+        String myDataBase = "";
         String url = "jdbc:mysql://" + serverName + "/" + myDataBase;
 
         try {
-            String username = "root";
-            String password = "Zenit1925!";
+            String username = "";
+            String password = "";
             connection = DriverManager.getConnection(url, username, password);
             databaseStatus.setText("Connection successful");
             databaseStatus.setForeground(Color.green.darker());
