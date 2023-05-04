@@ -26,7 +26,7 @@ public class CarRentalSystem extends JFrame implements ActionListener {
         databaseStatus.setHorizontalAlignment(JLabel.CENTER);
         databaseStatus.setVerticalAlignment(JLabel.BOTTOM);
         add(databaseStatus);
-        connectToDatabase();
+
 
         JMenuBar menuBar = new JMenuBar();
         menuBar.setBackground(Color.DARK_GRAY);
@@ -48,8 +48,9 @@ public class CarRentalSystem extends JFrame implements ActionListener {
         logoutButton.addActionListener(this);
         menuBar.add(logoutButton);
 
+        connectToDatabase();
         setJMenuBar(menuBar);
-        setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
 
 
     }
@@ -71,6 +72,7 @@ public class CarRentalSystem extends JFrame implements ActionListener {
 
             databaseStatus.setText("Connection to database failed!");
             databaseStatus.setForeground(Color.red);
+
         }
     }
 
@@ -90,6 +92,14 @@ public class CarRentalSystem extends JFrame implements ActionListener {
         } else if (actionEvent.getSource() == logoutButton) {
             dispose();
         }
+
+    }
+
+    public void failedConnection() {
+
+        carManagementButton.setEnabled(false);
+        rentalManagementButton.setEnabled(false);
+
 
     }
 
